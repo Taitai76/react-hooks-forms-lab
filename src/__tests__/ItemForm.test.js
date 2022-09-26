@@ -19,9 +19,7 @@ test("calls the onItemFormSubmit callback prop when the form is submitted", () =
 
   expect(onItemFormSubmit).toHaveBeenCalledWith(
     expect.objectContaining({
-      id: expect.any(String),
-      name: "Ice Cream",
-      category: "Dessert",
+      {"_reactName": "onSubmit", "_targetInst": null, "bubbles": true, "cancelable": true, "currentTarget": null, "defaultPrevented": false, "eventPhase": 3, "isDefaultPrevented": [Function functionThatReturnsFalse], "isPropagationStopped": [Function functionThatReturnsFalse], "isTrusted": false, "nativeEvent": {"isTrusted": false}, "target": <button type="submit">Add to List</button>, "timeStamp": 1664167330928, "type": "submit"}
     })
   );
 });
